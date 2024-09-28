@@ -10,7 +10,7 @@ function UserList() {
     },[])
 
     const getUsers = async () =>{
-        const result = await fetch('myapi.myapp.in:8000/users');
+        const result = await fetch('http://3.94.210.6:8000/users');
         const formatedUsers = await result.json();
         debugger;
         setUsers(formatedUsers);
